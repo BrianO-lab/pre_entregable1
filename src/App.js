@@ -1,5 +1,5 @@
-import NavBar from "./components/NavBar";
-import SaerchBar from "./components/SaerchBar";
+import NavBar from "./components/NavBar/NavBar";
+import SaerchBar from "./components/SaerchBar/SaerchBar";
 
 function App() {
   return (

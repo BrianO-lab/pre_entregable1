@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../Asset/logo_pequeno.png'
+import Logo from '../../Images/logo_pequeno.png';
 
 const SaerchBar = () => (
   <div>

@@ -1,7 +1,6 @@
 import React from 'react';
-import ButtonBar from './ButtonBar';
-import CartIcon from '../Asset/shopping-cart.png'
-
+import ButtonBar from "../ButtonBar/ButtonBar";
+import CartIcon from "../../Images/CartIcon.png"
 
 const NavBar = () => (
   <div>
