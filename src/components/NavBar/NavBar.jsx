@@ -1,9 +1,10 @@
 import React from 'react';
 import ButtonBar from "../ButtonBar/ButtonBar";
-import CartIcon from "../../Images/CartIcon.png"
+import CartIcon from "../../Images/CartIcon.png";
+import "./NavBar.css";
 
 const NavBar = () => (
-  <div>
+  <div className='header-navbar'>
     <ButtonBar
       titulo="Los más vendidos"
     />
@@ -13,7 +14,7 @@ const NavBar = () => (
     <ButtonBar
       titulo="Nuevos lanzamientos"
     />
-    <img alt='Carrito de compras' src={CartIcon} />
+    <img className='logo-carrito' alt='Carrito de compras' src={CartIcon} />
   </div>
 
 );
