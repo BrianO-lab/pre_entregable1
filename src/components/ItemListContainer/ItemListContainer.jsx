@@ -1,6 +1,7 @@
 
-import React from 'react'
-import ItemCard from '../ItemCard/ItemCard'
+import React from 'react';
+import ItemCard from '../ItemCard/ItemCard';
+import './ItemListContainer.css'
 
 
 
@@ -8,7 +9,7 @@ export default function ItemListContainer() {
 
 
   return (
-    <>
+    <div className='list-item'>
       <ItemCard
         img="https://briano-lab.github.io/Pre_Entrega2_JS/img/stock/Attack_on_Titan_Lost_Girls_(novel).jpg"
         titulo="Libro 1"
@@ -27,25 +28,8 @@ export default function ItemListContainer() {
         autor="Autor 3"
         precio="1200"
       />
-      <ItemCard
-        img="https://briano-lab.github.io/Pre_Entrega2_JS/img/stock/DAYS_Volume_29.jpg"
-        titulo="Libro 4"
-        autor="Autor 4"
-        precio="1200"
-      />
-      <ItemCard
-        img="https://briano-lab.github.io/Pre_Entrega2_JS/img/stock/Hagakure.jpg"
-        titulo="Libro 5"
-        autor="Autor 5"
-        precio="1200"
-      />
-      <ItemCard
-        img="https://briano-lab.github.io/Pre_Entrega2_JS/img/stock/Harem_Marriage_Volume_17.jpg"
-        titulo="Libro 6"
-        autor="Autor 6"
-        precio="1200"
-      />
+   
 
-    </>
+    </div>
   )
 }

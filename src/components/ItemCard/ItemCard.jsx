@@ -1,12 +1,13 @@
 import React from 'react'
 import Button from '../Button/Button';
+import './ItemCard.css'
 
 export default function ItemCard(props) {
   return (
     <>
       <div className='card'>
-        <div className='card-img'>
-          <img alt={props.titulo} src={props.img}></img>
+        <div className='card-div--img'>
+          <img className='card-img' alt={props.titulo} src={props.img}></img>
         </div>
         <div className='card-info'>
           <h3 className='card-info--titulo'>{props.titulo}</h3>

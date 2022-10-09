@@ -1,9 +1,9 @@
 .header-navbar {
   display: flex;
   background-color: red;
-  justify-content:space-evenly ;
+  justify-content: space-evenly;
   box-shadow: 0 2px 3px -1px gray;
-
+  height: 4rem;
 }
 
 .logo-carrito {
