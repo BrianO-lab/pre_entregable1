@@ -7,7 +7,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 1200,
-    autor: 'autor ',
+    autor: 'autor 1',
     img: './img/stock/Attack_on_Titan_Lost_Girls_(novel).jpg',
     categoria: 'a'
   },
@@ -19,7 +19,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 1100,
-    autor: 'autor ',
+    autor: 'autor 2',
     img: './img/stock/Back_When_You_Called_Us_Devils_Volume_13.jpg',
     categoria: 'a'
   },
@@ -31,7 +31,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 1200,
-    autor: 'autor ',
+    autor: 'autor 3',
     img: './img/stock/Cardcaptor_Sakura_Clear_Card_Volume_11.jpg',
     categoria: 'a'
   },
@@ -43,7 +43,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 1400,
-    autor: 'autor ',
+    autor: 'autor 4',
     img: './img/stock/DAYS_Volume_29.jpg',
     categoria: 'b'
   },
@@ -55,7 +55,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 1200,
-    autor: 'autor ',
+    autor: 'autor 1',
     img: './img/stock/Hagakure.jpg',
     categoria: 'b'
   },
@@ -67,7 +67,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 1500,
-    autor: 'autor ',
+    autor: 'autor 2',
     img: './img/stock/Harem_Marriage_Volume_17.jpg',
     categoria: 'c'
   },
@@ -79,7 +79,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 500,
-    autor: 'autor ',
+    autor: 'autor 3',
     img: './img/stock/Koigakubo-kun_Stole_My_First_Time_Volume_1.jpg',
     categoria: 'c'
   },
@@ -91,7 +91,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 500,
-    autor: 'autor ',
+    autor: 'autor 4',
     img: './img/stock/Musashi.jpg',
     categoria: 'd'
   },
@@ -103,7 +103,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 500,
-    autor: 'autor ',
+    autor: 'autor 1',
     img: './img/stock/Nighttime_for_Just_Us_Two_Volume_2.jpg',
     categoria: 'd'
   },
@@ -115,7 +115,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 700,
-    autor: 'autor ',
+    autor: 'autor 2',
     img: './img/stock/OTOMO_A_Global_Tribute_to_the_Mind_Behind_Akira.jpg',
     categoria: 'e'
   },
@@ -127,7 +127,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 700,
-    autor: 'autor ',
+    autor: 'autor 3',
     img: './img/stock/Seraph_of_the_End_Guren_Ichinose_Resurrection_at_Nineteen_Volume_1.jpg',
     categoria: 'e'
   },
@@ -139,7 +139,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 700,
-    autor: 'autor ',
+    autor: 'autor 4',
     img: './img/stock/Taiko.jpg',
     categoria: 'f'
   },
@@ -151,7 +151,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 900,
-    autor: 'autor ',
+    autor: 'autor 1',
     img: './img/stock/The_Blade_of_the_Courtesans.jpg',
     categoria: 'f'
   },
@@ -163,7 +163,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 1400,
-    autor: 'autor ',
+    autor: 'autor 2',
     img: './img/stock/The_Seven_Deadly_Sins_Seven-Colored_Recollections.jpg',
     categoria: 'g'
   },
@@ -175,7 +175,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 7000,
-    autor: 'autor ',
+    autor: 'autor 3',
     img: './img/stock/Your_Lie_in_April_A_Six-Person_Etude.jpg',
     categoria: 'g'
   },
@@ -187,7 +187,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 777,
-    autor: 'autor ',
+    autor: 'autor 4',
     img: './img/stock/Ring.jpg',
     categoria: 'h'
   },
@@ -199,7 +199,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 234,
-    autor: 'autor ',
+    autor: 'autor 4',
     img: './img/stock/Shield_of_Straw.jpg',
     categoria: 'h'
   },
@@ -211,7 +211,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 155600,
-    autor: 'autor ',
+    autor: 'autor 1',
     img: './img/stock/The_Eternal_Zero.jpg',
     categoria: 'i'
   },
@@ -223,7 +223,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 1600,
-    autor: 'autor ',
+    autor: 'autor 2',
     img: './img/stock/Lala_Pipo.jpg',
     categoria: 'i'
   },
@@ -235,7 +235,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 3200,
-    autor: 'autor ',
+    autor: 'autor 3',
     img: './img/stock/Lala_Pipo.jpg',
     categoria: 'j'
   },
@@ -247,7 +247,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 2300,
-    autor: 'autor ',
+    autor: 'autor 4',
     img: './img/stock/DAYS_Volume_29.jpg',
     categoria: 'j'
   },
@@ -259,7 +259,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 5600,
-    autor: 'autor ',
+    autor: 'autor 1',
     img: './img/stock/Cardcaptor_Sakura_Clear_Card_Volume_11.jpg',
     categoria: 'k'
   },
@@ -271,7 +271,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 1700,
-    autor: 'autor ',
+    autor: 'autor 2',
     img: './img/stock/Back_When_You_Called_Us_Devils_Volume_13.jpg',
     categoria: 'k'
   },
@@ -283,7 +283,7 @@ const data = [
     stock: 1,
     desc: 'Desc',
     precio: 800,
-    autor: 'autor ',
+    autor: 'autor 3',
     img: './img/stock/Hagakure.jpg',
     categoria: 'l'
   }
