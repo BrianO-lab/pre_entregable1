@@ -1,6 +1,5 @@
 import React from 'react';
 import ButtonBar from "../ButtonBar/ButtonBar";
-import CartIcon from "../../Images/CartIcon.png";
 import "./NavBar.css";
 
 const NavBar = () => (

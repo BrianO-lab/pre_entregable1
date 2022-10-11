@@ -16,8 +16,6 @@ export default function ItemCard(props) {
         </div>
         <Button titulo='Añadir al carrito' />
       </div>
-
-
     </>
   );
 }
