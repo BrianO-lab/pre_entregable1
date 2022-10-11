@@ -260,7 +260,7 @@ const data = [
     desc: 'Desc',
     precio: 800,
     autor: 'autor 3',
-    img: '../../Images/Books/Hagakure.jpg',
+    img: '../Images/Books/Hagakure.jpg',
     categoria: 'l'
   }
 ];

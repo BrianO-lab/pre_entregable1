@@ -13,7 +13,7 @@ const NavBar = () => (
     <ButtonBar
       titulo="Nuevos lanzamientos"
     />
-    <img className='logo-carrito' alt='Carrito de compras' src={CartIcon} />
+    <img className='logo-carrito' alt='Carrito de compras' src="/Images/CartIcon.png" />
   </div>
 
 );
