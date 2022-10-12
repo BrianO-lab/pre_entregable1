@@ -1,11 +1,14 @@
 
 import React, { useState, useEffect } from 'react';
-import ItemCard from '../ItemCard/ItemCard';
+import ItemList from './ItemList';
 import './ItemListContainer.css'
 import { getBooks } from '../../bookAPI/bookAPI';
 
+// import ItemList from "./ItemList";
 
-export default function ItemListContainer() {
+
+function ItemListContainer(props) {
+
 
   const [dataBook, setDataBook] = useState([]);
 
@@ -13,24 +16,14 @@ export default function ItemListContainer() {
     getBooks().then((data) => {
       setDataBook(data);
     });
-  }, [])
+  }, []);
+
 
   return (
     <div className='list-item'>
-      {dataBook.map((book) => {
-        return (
-          <ItemCard
-            key={book.id}
-            titulo={book.titulo}
-            img={book.img}
-            autor={book.autor}
-            precio={book.precio}
-          />
-        );
-      })}
-
-
-
+      <ItemList dataBook={dataBook} />
     </div>
-  )
+  );
 }
+
+export default ItemListContainer;
