@@ -6,12 +6,11 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header>
-        <SaerchBar />
-        <NavBar />
-        <ItemListContainer />
+      <SaerchBar />
+      <NavBar />
+      <ItemListContainer />
 
-      </header>
+
     </div>
   );
 }
