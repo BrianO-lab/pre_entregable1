@@ -1,5 +1,6 @@
 import React from 'react'
 import ItemCard from '../ItemCard/ItemCard';
+
 import './ItemListContainer.css'
 
 
@@ -14,6 +15,7 @@ function ItemList(prop) {
             img={book.img}
             autor={book.autor}
             precio={book.precio}
+            stock={book.stock}
           />
         );
       })}

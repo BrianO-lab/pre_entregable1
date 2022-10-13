@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-export default function ItemCount({ stock, initial, text }) {
+export default function ItemCount({ stock, initial }) {
   const [count, setCount] = useState(initial);
 
   function handleSubstract() {
