@@ -10,7 +10,7 @@ function App() {
         <SaerchBar />
         <NavBar />
         <ItemListContainer />
-        
+
       </header>
     </div>
   );
