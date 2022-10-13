@@ -14,11 +14,10 @@ export default function ItemCount({ stock, initial, text }) {
 
   return (
     <div>
-      <h2>Realiza tu compra</h2>
       <button onClick={handleSubstract}>-</button>
       <strong>{count}</strong>
       <button onClick={handleAdd}>+</button>
-      <button>{text}</button>
+
     </div>
   );
 }
