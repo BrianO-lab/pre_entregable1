@@ -14,7 +14,7 @@ const data = [
     id: 2,
     titulo: 'libro 2',
     tipo: 'libro',
-    stock: 1,
+    stock: 10,
     desc: 'Desc',
     precio: 1100,
     autor: 'autor 2',
