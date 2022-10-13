@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import ItemCard from '../ItemCard/ItemCard';
-import './ItemListContainer.css'
+import './ItemListContainer.css';
 import { getBooks } from '../../bookAPI/bookAPI';
 
 
