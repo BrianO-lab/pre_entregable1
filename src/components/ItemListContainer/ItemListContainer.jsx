@@ -25,6 +25,7 @@ export default function ItemListContainer() {
             img={book.img}
             autor={book.autor}
             precio={book.precio}
+            stock={book.stock}
           />
         );
       })}
