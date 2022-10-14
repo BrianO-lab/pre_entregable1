@@ -7,7 +7,7 @@ import './ItemListContainer.css'
 function ItemList(prop) {
   return (
     <div className='list-item'>
-      {prop.map((book) => {
+      {prop.dataBook.map((book) => {
         return (
           <ItemCard
             key={book.id}

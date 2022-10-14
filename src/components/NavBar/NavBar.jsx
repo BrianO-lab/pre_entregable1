@@ -1,19 +1,19 @@
 import React from 'react';
-import ButtonBar from '../ButtonBar/ButtonBar';
 import './NavBar.css';
+import CartWidget from "./CartWidget";
+
+import { Link } from "react-router-dom";
+
 
 const NavBar = () => (
-  <div className='header-navbar'>
-    <ButtonBar
-      titulo="Los más vendidos"
-    />
-    <ButtonBar
-      titulo="Próximamente"
-    />
-    <ButtonBar
-      titulo="Nuevos lanzamientos"
-    />
-    <img className='logo-carrito' alt='Carrito de compras' src="/Images/CartIcon.png" />
+  <div className="header-navbar">
+    <ul className="nav-menu">
+      <Link to="/">Inicio </Link>
+      <Link to="/item">Libros</Link>
+      <Link to="/categoria/b">b</Link>
+      <Link to="/categoria/k">k</Link>
+      <CartWidget />
+    </ul>
   </div>
 
 );
