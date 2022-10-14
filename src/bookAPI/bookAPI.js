@@ -269,3 +269,20 @@ export function getBooks() {
     setTimeout(() => resolver(data), 1500)
   })
 }
+export function getUnlibro(idParams) {
+  return new Promise((resolve) => {
+    let bookReq = data.find((item) => {
+      return item.id === Number(idParams);
+    });
+    setTimeout(() => resolve(bookReq), 1000);
+  });
+}
+
+export function getBookByCategoria(idCategoryParams) {
+  return new Promise((resolve) => {
+    let arrayFilterLibro = data.filter(
+      (item) => item.category === idCategoryParams
+    );
+    setTimeout(() => resolve(arrayFilterLibro), 1000);
+  });
+}

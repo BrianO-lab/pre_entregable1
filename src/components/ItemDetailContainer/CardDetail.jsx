@@ -1,7 +1,7 @@
 import React from "react";
 
 import ItemCount from "../ItemCount/ItemCount";
-import "./itemdetail.css";
+import "./ItemDetailContainer.css";
 
 function CardDetail({ book }) {
   return (
