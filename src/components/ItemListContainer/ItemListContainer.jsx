@@ -6,7 +6,7 @@ import { getBooks, getBookByCategoria } from '../../bookAPI/bookAPI';
 import { useParams } from "react-router-dom";
 
 
-export default function ItemListContainer() {
+function ItemListContainer(props) {
 
   const [dataBook, setDataBook] = useState([]);
   const params = useParams();
@@ -17,8 +17,7 @@ export default function ItemListContainer() {
       getBooks().then((data) => {
         setDataBook(data);
       });
-    }
-    else {
+    } else {
       getBookByCategoria(categoriaID).then((data) => {
         setDataBook(data);
       });
@@ -27,18 +26,9 @@ export default function ItemListContainer() {
 
   return (
     <div className='list-item'>
-      {dataBook.map((book) => {
-        return (
-          <div className="container">
-
-            <ItemList dataBook={dataBook} />
-
-          </div>
-        );
-      })}
-
-
-
+      <ItemList dataBook={dataBook} />
     </div>
   )
 }
+
+export default ItemListContainer;
