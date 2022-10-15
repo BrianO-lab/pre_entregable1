@@ -14,15 +14,12 @@ function App() {
         <Routes>
           <Route path="/" element={<ItemListContainer />} />
           <Route path="/categoria/:categoriaID" element={<ItemListContainer />}></Route>
-          {/* <Route
+          <Route
             path="/item/:itemID"
             element={<ItemDetailContainer />}
-          ></Route> */}
+          ></Route>
         </Routes>
-
       </BrowserRouter>
-
-
 
     </div>
   );

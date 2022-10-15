@@ -11,6 +11,7 @@ function ItemList(prop) {
         return (
           <ItemCard
             key={book.id}
+            id={book.id}
             titulo={book.titulo}
             img={book.img}
             autor={book.autor}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-export default function ItemCount({ stock, initial }) {
+export default function ItemCount({ stock, initial,text }) {
   const [count, setCount] = useState(initial);
 
   function handleSubstract() {
@@ -17,7 +17,7 @@ export default function ItemCount({ stock, initial }) {
       <button onClick={handleSubstract}>-</button>
       <strong>{count}</strong>
       <button onClick={handleAdd}>+</button>
-
+      <button>{text}</button>
     </div>
   );
 }

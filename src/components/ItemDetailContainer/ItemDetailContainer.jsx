@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { getUnlibro } from '../../bookAPI/bookAPI';
 import CardDetail from "./CardDetail";
+import { getUnLibro } from '../../bookAPI/bookAPI';
 import { useParams } from "react-router-dom";
 
 function ItemDetailContainer(props) {
@@ -9,7 +9,7 @@ function ItemDetailContainer(props) {
   const { itemID } = useParams();
 
   useEffect(() => {
-    getUnlibro(itemID).then((data) => {
+    getUnLibro(itemID).then((data) => {
       setbook(data);
     });
   }, [itemID]);

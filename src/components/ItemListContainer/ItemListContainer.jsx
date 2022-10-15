@@ -10,7 +10,7 @@ function ItemListContainer(props) {
 
   const [dataBook, setDataBook] = useState([]);
   const params = useParams();
-  const categoriaID = params.categoryID;
+  const categoriaID = params.categoriaID;
 
   useEffect(() => {
     if (categoriaID === undefined) {
@@ -22,7 +22,7 @@ function ItemListContainer(props) {
         setDataBook(data);
       });
     }
-  }, [categoriaID])
+  }, [categoriaID]);
 
   return (
     <div className='list-item'>
