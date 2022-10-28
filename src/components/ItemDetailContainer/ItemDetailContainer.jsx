@@ -16,7 +16,10 @@ function ItemDetailContainer(props) {
 
   return (
 
-    <CardDetail book={book} />
+    <CardDetail
+      book={book}
+      textBtnAddCart="AGREGAR AL CARRITO"
+    />
 
   );
 }
