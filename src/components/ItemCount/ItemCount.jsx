@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Button from "../Button/Button";
 
 
-export default function ItemCount({ stock, initial, }) {
+export default function ItemCount({ stock, initial, text, onAddToCart }) {
   const [count, setCount] = useState(initial);
 
   function handleSubstract() {
@@ -12,12 +13,24 @@ export default function ItemCount({ stock, initial, }) {
     if (count < stock) setCount(count + 1);
   }
 
+  function handleClick(){
+    setCount(1)
+  }
+
   return (
     <div>
-      <button onClick={handleSubstract}>-</button>
+      <Button onClick={handleSubstract}>-</Button>
       <strong>{count}</strong>
-      <button onClick={handleAdd}>+</button>
-
+      <Button onClick={handleAdd}>+</Button>
+      <Button
+        onClick={() => {
+          onAddToCart(count);
+          handleClick();
+        }}
+        
+      >
+        {text}
+      </Button>
     </div>
   );
 }
