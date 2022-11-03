@@ -13,7 +13,7 @@ export default function ItemCount({ stock, initial, text, onAddToCart }) {
     if (count < stock) setCount(count + 1);
   }
 
-  function handleClick(){
+  function handleClick() {
     setCount(1)
   }
 
@@ -27,7 +27,7 @@ export default function ItemCount({ stock, initial, text, onAddToCart }) {
           onAddToCart(count);
           handleClick();
         }}
-        
+
       >
         {text}
       </Button>

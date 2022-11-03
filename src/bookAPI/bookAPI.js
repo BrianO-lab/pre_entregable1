@@ -242,15 +242,21 @@ const data = [
 ];
 export function getBooks() {
   return new Promise((resolver) => {
-    setTimeout(() => resolver(data), 0)
+    setTimeout(() => resolver(data), 1500)
   })
 }
 export function getUnLibro(idParams) {
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     let bookReq = data.find((item) => {
       return item.id === Number(idParams);
     });
-    setTimeout(() => resolve(bookReq), 0);
+    setTimeout(() => {
+      if (bookReq === undefined) {
+        reject(new Error("No se pudo encontrar el producto"))
+      } else {
+        resolve(bookReq)
+      }
+    }, 1500);
   });
 }
 
@@ -259,6 +265,6 @@ export function getBookByCategoria(idCategoryParams) {
     let arrayFilterLibros = data.filter(
       (item) => item.categoria === idCategoryParams
     );
-    setTimeout(() => resolve(arrayFilterLibros), 0);
+    setTimeout(() => resolve(arrayFilterLibros), 1500);
   });
 }

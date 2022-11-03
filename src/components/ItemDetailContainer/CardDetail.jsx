@@ -1,8 +1,9 @@
 import React, { useState, useContext, useEffect } from "react";
 import ItemCount from "../ItemCount/ItemCount";
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
 import "./ItemDetailContainer.css";
 import { cartContext } from "../../context/cartContext";
+import Loader from "../Loader/Loader";
 
 function CardDetail({ book, textBtnAddCart }) {
   const [count, setCount] = useState(0);
@@ -13,35 +14,35 @@ function CardDetail({ book, textBtnAddCart }) {
     addToCart(book, count);
     setCount(count);
   }
-  useEffect(()=>{
-    
+  useEffect(() => {
+
   })
 
-  return (
-    <div className="detail-container">
+  if (book.titulo) {
+    return (
+      <div className="detail-container">
 
-      <div className="main container">
-        <img src={book.img} alt={book.titulo} />
-        <h1>{book.titulo}</h1>
-        <h3>$ {book.precio}</h3>
+        <div className="main container">
+          <img src={book.img} alt={book.titulo} />
+          <h1>{book.titulo}</h1>
+          <h3>$ {book.precio}</h3>
+        </div>
+        {count === 0 ? (
+          <ItemCount
+            stock={book.stock}
+            initial={1}
+            text={textBtnAddCart}
+            onAddToCart={handleAddToCart}
+          />
+        ) : (
+          setCount(0)
+        )}
+
       </div>
-      {count === 0 ? (
-        <ItemCount
-          stock={book.stock}
-          initial={1}
-          text={textBtnAddCart}
-          onAddToCart={handleAddToCart}
-        />
-      ) : (
-        
-        setCount(0)
-      )
+    );
+  }
+  return <Loader />;
 
-
-      }
-
-    </div>
-  );
 }
 
 export default CardDetail;
