@@ -1,15 +1,16 @@
 import React, { useState, useContext, useEffect } from "react";
 import ItemCount from "../ItemCount/ItemCount";
-// import Button from "../Button/Button";
+import Button from "../Button/Button";
 import "./ItemDetailContainer.css";
-import { cartContext } from "../../context/cartContext";
+import { cartContext, } from "../../context/cartContext";
+
 import Loader from "../Loader/Loader";
+import { Link } from "react-router-dom";
 
 function CardDetail({ book, textBtnAddCart }) {
   const [count, setCount] = useState(0);
-  const { addToCart } = useContext(cartContext);
-  //1. Crear una función de "compra"
-  //2. Debe guardar el valor de la cantidad en un estado
+  const { addToCart, isInCart } = useContext(cartContext);
+
   function handleAddToCart(count) {
     addToCart(book, count);
     setCount(count);
@@ -27,15 +28,29 @@ function CardDetail({ book, textBtnAddCart }) {
           <h1>{book.titulo}</h1>
           <h3>$ {book.precio}</h3>
         </div>
-        {count === 0 ? (
+
+        {isInCart(book.id) ? (
+
+          <>
+            <Link to="/cart">
+              <Button>
+                Ir al carrito
+              </Button>
+            </Link>
+            <Link to="/">
+              <Button>
+                Seguir comprando
+              </Button>
+            </Link>
+          </>
+
+        ) : (
           <ItemCount
             stock={book.stock}
-            initial={1}
+            initial={count}
             text={textBtnAddCart}
             onAddToCart={handleAddToCart}
           />
-        ) : (
-          setCount(0)
         )}
 
       </div>
