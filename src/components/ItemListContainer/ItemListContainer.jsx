@@ -2,7 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import ItemList from "./ItemList";
 import './ItemListContainer.css';
-import { getBooks, getBookByCategoria } from '../../bookAPI/bookAPI';
+import { getBooks, getBookByCategoria } from "../../services/firebase";
+
 import { useParams } from "react-router-dom";
 import Loader from "../Loader/Loader";
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import CardDetail from "./CardDetail";
-import { getUnLibro } from '../../bookAPI/bookAPI';
+import { getUnLibro } from "../../services/firebase";
 import { useParams } from "react-router-dom";
 
 function ItemDetailContainer(props) {
@@ -15,7 +15,6 @@ function ItemDetailContainer(props) {
         setbook(data);
       })
       .catch((error) => {
-        console.log("Catch?")
         setFeedbackMsg(error.message);
       });
   }, [itemID]);

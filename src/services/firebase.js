@@ -1,5 +1,8 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { getFirestore, collection, getDocs, doc, getDoc, query, where } from "firebase/firestore";
+
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -15,5 +18,44 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const FirebaseApp = initializeApp(firebaseConfig);
+const db = getFirestore(FirebaseApp);
+
+export async function getBooks() {
+  const collectionRef = collection(db, "libros");
+  let results = await getDocs(collectionRef);
+  let dataLibros = results.docs.map(doc => {
+    return {
+      id: doc.id,
+      ...doc.data(),
+    };
+  })
+  return dataLibros;
+}
+
+export async function getUnLibro(idParams) {
+  try {
+    const docRef = doc(db, "libros", idParams);
+    const docResult = await getDoc(docRef);
+
+    return { id: docResult.id, ...docResult.data() };
+  } catch (error) {
+
+  }
+}
+
+export async function getBookByCategoria(idCategoryParams) {
+  const collectionRef = collection(db, "libros");
+  const queryCategoria = query(collectionRef, where("categoria", "==", idCategoryParams));
+  let results = await getDocs(queryCategoria);
+
+  let dataLibros = results.docs.map(doc => {
+    return {
+      id: doc.id,
+      ...doc.data(),
+    };
+  })
+  return dataLibros;
+}
+
 
 export default FirebaseApp;
